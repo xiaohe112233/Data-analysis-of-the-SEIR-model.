@@ -1,0 +1,10 @@
+install.packages("nCov2019")
+install.packages("reshape2")
+install.packages("ggplot2")
+library(nCov2019)
+library(ggplot2)
+library(reshape2)
+require(nCov2019)
+x = query()
+ x$historical["China"] -> y
+ ggplot(y, aes(date, cases)) + geom_line()
